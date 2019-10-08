@@ -18,6 +18,8 @@
 		443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916323452E1F00E8FBF6 /* InitializeStateView.swift */; };
 		443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916523452EE300E8FBF6 /* InitializeState2View.swift */; };
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
+		B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */; };
+		B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		443E916323452E1F00E8FBF6 /* InitializeStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeStateView.swift; sourceTree = "<group>"; };
 		443E916523452EE300E8FBF6 /* InitializeState2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeState2View.swift; sourceTree = "<group>"; };
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
+		B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnotationView.swift; sourceTree = "<group>"; };
+		B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderSamplesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		443E913123452CF800E8FBF6 /* SwiftUISandbox */ = {
 			isa = PBXGroup;
 			children = (
+				B9D617CF234C660300AF8DF9 /* GeometryReader */,
 				443E916223452DD200E8FBF6 /* State */,
 				443E913223452CF800E8FBF6 /* AppDelegate.swift */,
 				443E913423452CF800E8FBF6 /* SceneDelegate.swift */,
@@ -149,8 +154,17 @@
 				443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */,
 				443E916323452E1F00E8FBF6 /* InitializeStateView.swift */,
 				443E916523452EE300E8FBF6 /* InitializeState2View.swift */,
+				B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		B9D617CF234C660300AF8DF9 /* GeometryReader */ = {
+			isa = PBXGroup;
+			children = (
+				B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */,
+			);
+			path = GeometryReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +302,9 @@
 				443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */,
 				443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */,
 				443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */,
+				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
 				443E913723452CF800E8FBF6 /* ContentView.swift in Sources */,
+				B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

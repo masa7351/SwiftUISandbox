@@ -10,64 +10,14 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @State var isShow = false
-    @State var count: Int = 0
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            Text("@Stateカウンター:\(self.count)")
-            Button(action: {self.isShow.toggle()}) {
-                Text("sheetを使い画面を開く")
-            }.sheet(isPresented: $isShow) {
-                NavigationView {
-                    AnotherView(bCount: self.$count)
-                }
-            }
-            Button(action: {
-                let window = UIApplication.shared.windows.first
-                let vc = UIHostingController(rootView: NavigationView { AnotherView(bCount: self.$count) })
-                window?.rootViewController?.present(vc, animated: true)
-            }) {
-                Text("modalとして画面を開く")
-            }
+        NavigationView {
+            List {
+                NavigationLink(destination: StateAnotationView(), label: { Text("@Stateの動作確認") })
+                NavigationLink(destination: GeometryRenderSamplesView(), label: { Text("GeometryRenderの動作確認") })
+            }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
         }
     }
-}
-
-private struct AnotherView: View {
-    @Environment(\.presentationMode) var presentationMode
-    @Binding var bCount: Int
-    @State var sCount: Int = 0
-    @ObservedObject var state = CounterState()
-
-    var body: some View {
-        Form {
-            Section {
-                Text("@Binding カウンター:\(self.bCount)")
-                Button(action: { self.bCount += 1 }) {
-                    Text("カウントアップ")
-                }
-            }
-            Section {
-                Text("@State カウンター:\(self.sCount)")
-                Button(action: { self.sCount += 1 }) {
-                    Text("カウントアップ")
-                }
-            }
-            Section {
-                Text("@ObservableObject カウンター:\(self.state.count)")
-                Button(action: { self.state.count += 1 }) {
-                    Text("カウントアップ")
-                }
-            }
-            Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                Text("CloseButton")
-            }
-        }.navigationBarTitle("カウントアップ")
-    }
-}
-
-final class CounterState: ObservableObject {
-    @Published var count: Int = 0
 }
 
 struct ContentView_Previews: PreviewProvider {
