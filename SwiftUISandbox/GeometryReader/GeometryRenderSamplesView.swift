@@ -10,12 +10,14 @@ import SwiftUI
 
 struct GeometryRenderSamplesView: View {
     var body: some View {
-        VStack {
-            stickyNote
+        ScrollView(.vertical, showsIndicators: false) {
             halfDivision
+                .frame(height: 50) // GeometryReader の内側だけではなく、外側でも高さ指定しないとstickyNotesと重なってしまう
+            stickyNotes
             horitontalBalls
-            Spacer()
+            cardList
         }
+        .navigationBarTitle("GeometryRender Lab")
     }
     
     // https://www.hackingwithswift.com/quick-start/swiftui/how-to-provide-relative-sizes-using-geometryreader
@@ -51,17 +53,20 @@ struct GeometryRenderSamplesView: View {
 //        }
     }
     
-    var stickyNote: some View {
-        VStack(alignment: .center, spacing: 20) {
+    var stickyNotes: some View {
+        Group {
             Text("Hello World!")
-            .frame(width: 120, height: 120)
-            .background(StickyNoteView())
+                .frame(width: 120, height: 120)
+                .background(StickyNoteView())
 
+            Spacer().frame(height: 10)
+            
             Text("GeometryRenderのお勉強。これを活用できるとやれることの幅が広がりそう。")
-            .frame(width: 200)
-            .lineLimit(10)
-            .fixedSize(horizontal: true, vertical: false)
-            .background(StickyNoteView())
+                .frame(width: 200, height: 200)
+//                .frame(width: 200)
+                .lineLimit(10)
+                .fixedSize(horizontal: true, vertical: false)
+                .background(StickyNoteView())
 
         }
     }
@@ -101,6 +106,23 @@ struct GeometryRenderSamplesView: View {
             }
         }
     }
+    
+    
+    var cardList: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 20) {
+                ForEach(0...30, id: \.self) { value in
+                    GeometryReader { geometry in
+                        CardView(message: "カード\(value)")
+                        .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 40) / -15), axis: (x: 0, y: 10, 0))
+                    }
+                    .frame(width: 140, height: 250)
+                }
+            }
+            .padding(40)
+        }
+    }
+    
 }
 
 // https://qiita.com/takaf51/items/a67db8bbc42a4c82b1f0
@@ -137,8 +159,25 @@ struct StickyNoteView: View {
 }
 
 
+struct CardView: View {
+    var message: String = ""
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .frame(width: 140, height: 200)
+                .foregroundColor(.blue)
+                .cornerRadius(15)
+            Text(message)
+        }
+    }
+}
+
+// MARK: - Preview
+
 struct GeometryRenderSamplesView_Previews: PreviewProvider {
     static var previews: some View {
-        GeometryRenderSamplesView()
+        NavigationView {
+            GeometryRenderSamplesView()
+        }
     }
 }
