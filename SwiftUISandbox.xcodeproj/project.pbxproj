@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44047895234D4E430033F3AF /* GeometryRenderFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */; };
 		443E913323452CF800E8FBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913223452CF800E8FBF6 /* AppDelegate.swift */; };
 		443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913423452CF800E8FBF6 /* SceneDelegate.swift */; };
 		443E913723452CF800E8FBF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913623452CF800E8FBF6 /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderFirstView.swift; sourceTree = "<group>"; };
 		443E912F23452CF800E8FBF6 /* SwiftUISandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443E913223452CF800E8FBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443E913423452CF800E8FBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */,
+				44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */,
 			);
 			path = GeometryReader;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */,
 				443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */,
 				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
+				44047895234D4E430033F3AF /* GeometryRenderFirstView.swift in Sources */,
 				443E913723452CF800E8FBF6 /* ContentView.swift in Sources */,
 				B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,

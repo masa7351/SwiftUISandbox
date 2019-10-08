@@ -14,7 +14,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: StateAnotationView(), label: { Text("@Stateの動作確認") })
-                NavigationLink(destination: GeometryRenderSamplesView(), label: { Text("GeometryRenderの動作確認") })
+                NavigationLink(destination: GeometryRenderSamplesView(), label: { Text("GeometryRenderの動作確認サンプル集") })
+                NavigationLink(destination: GeometryRenderFirstView(), label: { Text("GeometryRenderの動作確認サンプル1") })
             }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
         }
     }
