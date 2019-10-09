@@ -19,6 +19,7 @@
 		443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916323452E1F00E8FBF6 /* InitializeStateView.swift */; };
 		443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916523452EE300E8FBF6 /* InitializeState2View.swift */; };
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
+		B927C419234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */; };
 		B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */; };
 		B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */; };
 		B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */; };
@@ -60,6 +61,7 @@
 		443E916323452E1F00E8FBF6 /* InitializeStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeStateView.swift; sourceTree = "<group>"; };
 		443E916523452EE300E8FBF6 /* InitializeState2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeState2View.swift; sourceTree = "<group>"; };
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
+		B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderPersentDivisionView.swift; sourceTree = "<group>"; };
 		B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewRemoveSpace.swift; sourceTree = "<group>"; };
 		B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnotationView.swift; sourceTree = "<group>"; };
 		B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderSamplesView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */,
 				44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */,
+				B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */,
 			);
 			path = GeometryReader;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				443E913723452CF800E8FBF6 /* ContentView.swift in Sources */,
 				B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,
+				B927C419234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
