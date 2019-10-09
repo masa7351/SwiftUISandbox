@@ -14,7 +14,7 @@ struct GeometryRenderSamplesView: View {
             halfDivision
                 .frame(height: 50) // GeometryReader の内側だけではなく、外側でも高さ指定しないとstickyNotesと重なってしまう
             stickyNotes
-            horitontalBalls
+            horizontalBalls
             cardList
         }
         .navigationBarTitle("GeometryRender Lab")
@@ -61,9 +61,8 @@ struct GeometryRenderSamplesView: View {
 
             Spacer().frame(height: 10)
             
-            Text("GeometryRenderのお勉強。これを活用できるとやれることの幅が広がりそう。")
+            Text("GeometryReaderのお勉強。これをマスターすると実現できることが広がりそう。")
                 .frame(width: 200, height: 200)
-//                .frame(width: 200)
                 .lineLimit(10)
                 .fixedSize(horizontal: true, vertical: false)
                 .background(StickyNoteView())
@@ -78,7 +77,7 @@ struct GeometryRenderSamplesView: View {
     let halfScreenWidth = UIScreen.main.bounds.width / 2
     let magnification: CGFloat = 1.8 // 円の拡大倍率
 
-    var horitontalBalls: some View {
+    var horizontalBalls: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0...10, id: \.self) { _ in
