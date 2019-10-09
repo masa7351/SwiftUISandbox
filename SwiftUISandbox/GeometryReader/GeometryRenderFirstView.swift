@@ -28,6 +28,7 @@ struct GeometryRenderFirstView: View {
                     .frame(width: UIScreen.main.bounds.width / 2, height: 200)
                     .background(Color.blue)
             }
+            .offset(x: 0, y: 0)
 //            .frame(width: UIScreen.main.bounds.width, height: 200)
 //            Rectangle().frame(width: UIScreen.main.bounds.width, height: 200, alignment: .leading)
 //                .foregroundColor(.green)
@@ -93,6 +94,23 @@ struct GeometryRenderFirstView: View {
         }
     }
 
+    // 左右に20ptのスペースを置いて
+    var flexibleWidth: some View {
+        HStack(spacing: 1) {
+             Rectangle().frame(width:20).foregroundColor(.red).frame(width:20)
+             GeometryReader { geometry in
+                  ScrollView {
+                       VStack {
+                            ForEach(0..<5) { index in
+                                 Rectangle().frame(minWidth: 50, maxWidth: .infinity, minHeight: 50, maxHeight: 50)
+                            }
+                        }
+                       .frame(width: geometry.size.width)
+                  }
+             }
+             Rectangle().foregroundColor(.red).frame(width:20)
+        }
+    }
 
 }
 
