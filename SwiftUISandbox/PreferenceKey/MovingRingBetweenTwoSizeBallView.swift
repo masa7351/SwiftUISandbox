@@ -59,16 +59,19 @@ struct MovingRingBetweenTwoSizeBallView: View {
                      }
                      .padding()
             }
-            .onPreferenceChange(CirclePreferenceKey.self) {  preference in
+            // onPreferenceChangeはpreferencenのデータが変わるたびにコールされるので、例えば端末が回転して Viewの構成が変わった場合、自動的に値の更新が行われます。
+            .onPreferenceChange(CirclePreferenceKey.self) { preference in
                 for p in preference {
                     self.rects[p.idx] = p.rect
                 }
             }
 
+            // 外縁
             Circle()
                 .stroke(Color.blue, lineWidth: 10)
                 .frame(width: rects[activeIdx].size.width, height: rects[activeIdx].size.height)
                 .offset(x: rects[activeIdx].minX , y: rects[activeIdx].minY)
+                // タップによる移動以外(回転、初期表示時)はアニメーションさせないように0としている
                 .animation(.linear(duration: isStarted ? 0.5 : 0))
 
         }.coordinateSpace(name: "myCoordination")
