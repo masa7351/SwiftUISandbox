@@ -24,7 +24,7 @@
 		B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */; };
 		B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */; };
 		B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */; };
-		B9C8BB6D234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */; };
+		B9C8BB6D234EF5C1008E2F56 /* MovingRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewRemoveSpace.swift; sourceTree = "<group>"; };
 		B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnotationView.swift; sourceTree = "<group>"; };
 		B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderSamplesView.swift; sourceTree = "<group>"; };
-		B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingRingBetweenTwoSizeBallView.swift; sourceTree = "<group>"; };
+		B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +191,7 @@
 		B9C8BB6B234EF561008E2F56 /* PreferenceKey */ = {
 			isa = PBXGroup;
 			children = (
-				B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */,
+				B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */,
 			);
 			path = PreferenceKey;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
 				44047895234D4E430033F3AF /* GeometryReaderFirstView.swift in Sources */,
 				B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */,
-				B9C8BB6D234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift in Sources */,
+				B9C8BB6D234EF5C1008E2F56 /* MovingRingView.swift in Sources */,
 				443E913723452CF800E8FBF6 /* ContentView.swift in Sources */,
 				B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,

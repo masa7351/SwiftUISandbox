@@ -18,7 +18,7 @@ struct ContentView: View {
                     NavigationLink(destination: BindingInteractiveView(), label: { Text("@Bindingを活用したインタラクティブUIのサンプル") })
                 }
                 Section(header: Text("PreferenceKey")){
-                    NavigationLink(destination: MovingRingBetweenTwoSizeBallView(), label: { Text("@PreferenceKeyのサンプル") })
+                    NavigationLink(destination: MovingRingView(), label: { Text("@PreferenceKeyのサンプル") })
                 }
                 Section(header: Text("GeometryReader")){
                     NavigationLink(destination: GeometryReaderSamplesView(), label: { Text("GeometryReaderの動作確認サンプル集") })
