@@ -1,5 +1,5 @@
 //
-//  GeometryRenderPersentDivisionView.swift
+//  GeometryReaderPersentDivisionView.swift
 //  SwiftUISandbox
 //
 //  Created by 今井真尚 on 2019/10/09.
@@ -10,7 +10,7 @@ import SwiftUI
 
 /// 3色のスタックで背景を表現するサンプル
 /// https://stackoverflow.com/questions/57243677/proportional-height-or-width-in-swiftui
-struct GeometryRenderPersentDivisionView: View {
+struct GeometryReaderPersentDivisionView: View {
     var body: some View {
         // 横のスタック
 //         GeometryReader { metrics in
@@ -31,8 +31,8 @@ struct GeometryRenderPersentDivisionView: View {
      }
 }
 
-struct GeometryRenderPersentDivisionView_Previews: PreviewProvider {
+struct GeometryReaderPersentDivisionView_Previews: PreviewProvider {
     static var previews: some View {
-        GeometryRenderPersentDivisionView()
+        GeometryReaderPersentDivisionView()
     }
 }

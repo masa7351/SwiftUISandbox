@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44047895234D4E430033F3AF /* GeometryRenderFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */; };
+		44047895234D4E430033F3AF /* GeometryReaderFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44047894234D4E430033F3AF /* GeometryReaderFirstView.swift */; };
 		443E913323452CF800E8FBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913223452CF800E8FBF6 /* AppDelegate.swift */; };
 		443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913423452CF800E8FBF6 /* SceneDelegate.swift */; };
 		443E913723452CF800E8FBF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E913623452CF800E8FBF6 /* ContentView.swift */; };
@@ -19,11 +19,12 @@
 		443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916323452E1F00E8FBF6 /* InitializeStateView.swift */; };
 		443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916523452EE300E8FBF6 /* InitializeState2View.swift */; };
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
-		B927C419234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */; };
+		B927C419234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */; };
 		B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */; };
 		B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */; };
 		B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */; };
-		B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */; };
+		B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */; };
+		B9C8BB6D234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderFirstView.swift; sourceTree = "<group>"; };
+		44047894234D4E430033F3AF /* GeometryReaderFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderFirstView.swift; sourceTree = "<group>"; };
 		443E912F23452CF800E8FBF6 /* SwiftUISandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443E913223452CF800E8FBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443E913423452CF800E8FBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +63,12 @@
 		443E916323452E1F00E8FBF6 /* InitializeStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeStateView.swift; sourceTree = "<group>"; };
 		443E916523452EE300E8FBF6 /* InitializeState2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeState2View.swift; sourceTree = "<group>"; };
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
-		B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderPersentDivisionView.swift; sourceTree = "<group>"; };
+		B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderPersentDivisionView.swift; sourceTree = "<group>"; };
 		B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingInteractiveView.swift; sourceTree = "<group>"; };
 		B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewRemoveSpace.swift; sourceTree = "<group>"; };
 		B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnotationView.swift; sourceTree = "<group>"; };
-		B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderSamplesView.swift; sourceTree = "<group>"; };
+		B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderSamplesView.swift; sourceTree = "<group>"; };
+		B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingRingBetweenTwoSizeBallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +99,10 @@
 		443E912623452CF800E8FBF6 = {
 			isa = PBXGroup;
 			children = (
+				443E913023452CF800E8FBF6 /* Products */,
 				443E913123452CF800E8FBF6 /* SwiftUISandbox */,
 				443E914823452CFC00E8FBF6 /* SwiftUISandboxTests */,
 				443E915323452CFC00E8FBF6 /* SwiftUISandboxUITests */,
-				443E913023452CF800E8FBF6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,17 +119,18 @@
 		443E913123452CF800E8FBF6 /* SwiftUISandbox */ = {
 			isa = PBXGroup;
 			children = (
-				B927C41A234EBCCB00F3FD7E /* Binding */,
-				B986FFDC234D8A7B0088377A /* ScrollView */,
-				B9D617CF234C660300AF8DF9 /* GeometryReader */,
-				443E916223452DD200E8FBF6 /* State */,
 				443E913223452CF800E8FBF6 /* AppDelegate.swift */,
-				443E913423452CF800E8FBF6 /* SceneDelegate.swift */,
-				443E913623452CF800E8FBF6 /* ContentView.swift */,
 				443E913823452CFC00E8FBF6 /* Assets.xcassets */,
-				443E913D23452CFC00E8FBF6 /* LaunchScreen.storyboard */,
+				B927C41A234EBCCB00F3FD7E /* Binding */,
+				443E913623452CF800E8FBF6 /* ContentView.swift */,
+				B9D617CF234C660300AF8DF9 /* GeometryReader */,
 				443E914023452CFC00E8FBF6 /* Info.plist */,
+				443E913D23452CFC00E8FBF6 /* LaunchScreen.storyboard */,
+				B9C8BB6B234EF561008E2F56 /* PreferenceKey */,
 				443E913A23452CFC00E8FBF6 /* Preview Content */,
+				443E913423452CF800E8FBF6 /* SceneDelegate.swift */,
+				B986FFDC234D8A7B0088377A /* ScrollView */,
+				443E916223452DD200E8FBF6 /* State */,
 			);
 			path = SwiftUISandbox;
 			sourceTree = "<group>";
@@ -185,12 +188,20 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
+		B9C8BB6B234EF561008E2F56 /* PreferenceKey */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8BB6C234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift */,
+			);
+			path = PreferenceKey;
+			sourceTree = "<group>";
+		};
 		B9D617CF234C660300AF8DF9 /* GeometryReader */ = {
 			isa = PBXGroup;
 			children = (
-				B9B85BB4234C6935008EF2A8 /* GeometryRenderSamplesView.swift */,
-				44047894234D4E430033F3AF /* GeometryRenderFirstView.swift */,
-				B927C418234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift */,
+				B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */,
+				44047894234D4E430033F3AF /* GeometryReaderFirstView.swift */,
+				B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */,
 			);
 			path = GeometryReader;
 			sourceTree = "<group>";
@@ -332,12 +343,13 @@
 				443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */,
 				443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */,
 				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
-				44047895234D4E430033F3AF /* GeometryRenderFirstView.swift in Sources */,
+				44047895234D4E430033F3AF /* GeometryReaderFirstView.swift in Sources */,
 				B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */,
+				B9C8BB6D234EF5C1008E2F56 /* MovingRingBetweenTwoSizeBallView.swift in Sources */,
 				443E913723452CF800E8FBF6 /* ContentView.swift in Sources */,
-				B9B85BB5234C6935008EF2A8 /* GeometryRenderSamplesView.swift in Sources */,
+				B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,
-				B927C419234DDAAE00F3FD7E /* GeometryRenderPersentDivisionView.swift in Sources */,
+				B927C419234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  GeometryRenderSamplesView.swift
+//  GeometryReaderSamplesView.swift
 //  SwiftUISandbox
 //
 //  Created by 今井真尚 on 2019/10/08.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct GeometryRenderSamplesView: View {
+struct GeometryReaderSamplesView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             halfDivision
@@ -17,7 +17,7 @@ struct GeometryRenderSamplesView: View {
             horizontalBalls
             cardList
         }
-        .navigationBarTitle("GeometryRender Lab")
+        .navigationBarTitle("GeometryReader Lab")
     }
     
     // https://www.hackingwithswift.com/quick-start/swiftui/how-to-provide-relative-sizes-using-geometryreader
@@ -85,7 +85,7 @@ struct GeometryRenderSamplesView: View {
                         Circle()
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.red)
-                            // ScrollViewのanimationとしてgeometryRenderの利用が可能
+                            // ScrollViewのanimationとしてGeometryReaderの利用が可能
                             // geometory.frame(in: .global).midXで円のx座標の中心点を取得し、
                             // 円が画面X軸上の真んに来た時にmagnificationで指定した倍率のサイズの
                             // 最大にして、左右にずれるほど小さく（最小値は１倍）なるようにサイズを指定
@@ -173,10 +173,10 @@ struct CardView: View {
 
 // MARK: - Preview
 
-struct GeometryRenderSamplesView_Previews: PreviewProvider {
+struct GeometryReaderSamplesView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            GeometryRenderSamplesView()
+            GeometryReaderSamplesView()
         }
     }
 }

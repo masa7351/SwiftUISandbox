@@ -1,5 +1,5 @@
 //
-//  GeometryRenderFirstView.swift
+//  GeometryReaderFirstView.swift
 //  SwiftUISandbox
 //
 //  Created by Masanao Imai on 2019/10/09.
@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-/// GeometryRenderの検証その1
-struct GeometryRenderFirstView: View {
+/// GeometryReaderの検証その1
+struct GeometryReaderFirstView: View {
     var body: some View {
-        noneGeometryRenderFrame
+        noneGeometryReaderFrame
 //        noneFrame
 //        specifiedOnlyOutsideFrame
 //        specifiedFrame
     }
     
     /// GeometryReader未使用
-    var noneGeometryRenderFrame: some View {
+    var noneGeometryReaderFrame: some View {
         ScrollView(.vertical, showsIndicators: false) {
             HStack(spacing: 0) {
                 Text("Left")
@@ -114,8 +114,8 @@ struct GeometryRenderFirstView: View {
 
 }
 
-struct GeometryRenderFirstView_Previews: PreviewProvider {
+struct GeometryReaderFirstView_Previews: PreviewProvider {
     static var previews: some View {
-        GeometryRenderFirstView()
+        GeometryReaderFirstView()
     }
 }
