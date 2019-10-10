@@ -18,7 +18,7 @@ struct ContentView: View {
                 NavigationLink(destination: GeometryRenderFirstView(), label: { Text("GeometryRenderの動作確認サンプル1") })
                 NavigationLink(destination: ScrollViewRemoveSpaceView(), label: { Text("ScrollViewの要素間のスペースを削る") })
                 NavigationLink(destination: GeometryRenderPersentDivisionView(), label: { Text("3色のスタックで背景を表現するサンプル") })
-
+                NavigationLink(destination: BindingInteractiveView(), label: { Text("@Bindingを活用したインタラクティブUIのサンプル") })
             }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
         }
     }
