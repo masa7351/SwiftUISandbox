@@ -32,6 +32,10 @@ struct ContentView: View {
                 Section(header: Text("Hack")){
                     NavigationLink(destination: ScrollViewRemoveSpaceView(), label: { Text("ScrollViewの要素間のスペースを削る") })
                 }
+                Section(header: Text("Lab")){
+                    NavigationLink(destination: SampleViewForDebugConsole(), label: { Text("コンソール用のWindow") })
+                }
+
             }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
         }
     }
