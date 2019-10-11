@@ -22,6 +22,8 @@
 		B927C419234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */; };
 		B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */; };
 		B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */; };
+		B999B77C2350111A005AF8CE /* CalendarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999B77B2350111A005AF8CE /* CalendarSelectionView.swift */; };
+		B999B77F23501403005AF8CE /* CanlendarSelectionAnchorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999B77E23501403005AF8CE /* CanlendarSelectionAnchorView.swift */; };
 		B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */; };
 		B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */; };
 		B9C8BB6D234EF5C1008E2F56 /* MovingRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */; };
@@ -66,6 +68,8 @@
 		B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderPersentDivisionView.swift; sourceTree = "<group>"; };
 		B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingInteractiveView.swift; sourceTree = "<group>"; };
 		B986FFDD234D8A970088377A /* ScrollViewRemoveSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewRemoveSpace.swift; sourceTree = "<group>"; };
+		B999B77B2350111A005AF8CE /* CalendarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSelectionView.swift; sourceTree = "<group>"; };
+		B999B77E23501403005AF8CE /* CanlendarSelectionAnchorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanlendarSelectionAnchorView.swift; sourceTree = "<group>"; };
 		B9B85BB2234C668F008EF2A8 /* StateAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnotationView.swift; sourceTree = "<group>"; };
 		B9B85BB4234C6935008EF2A8 /* GeometryReaderSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderSamplesView.swift; sourceTree = "<group>"; };
 		B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingRingView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		443E913123452CF800E8FBF6 /* SwiftUISandbox */ = {
 			isa = PBXGroup;
 			children = (
+				B999B77D235013BC005AF8CE /* AnchorPreferences */,
 				443E913223452CF800E8FBF6 /* AppDelegate.swift */,
 				443E913823452CFC00E8FBF6 /* Assets.xcassets */,
 				B927C41A234EBCCB00F3FD7E /* Binding */,
@@ -188,10 +193,19 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
+		B999B77D235013BC005AF8CE /* AnchorPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				B999B77E23501403005AF8CE /* CanlendarSelectionAnchorView.swift */,
+			);
+			path = AnchorPreferences;
+			sourceTree = "<group>";
+		};
 		B9C8BB6B234EF561008E2F56 /* PreferenceKey */ = {
 			isa = PBXGroup;
 			children = (
 				B9C8BB6C234EF5C1008E2F56 /* MovingRingView.swift */,
+				B999B77B2350111A005AF8CE /* CalendarSelectionView.swift */,
 			);
 			path = PreferenceKey;
 			sourceTree = "<group>";
@@ -340,6 +354,7 @@
 				B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */,
 				443E913323452CF800E8FBF6 /* AppDelegate.swift in Sources */,
 				443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */,
+				B999B77C2350111A005AF8CE /* CalendarSelectionView.swift in Sources */,
 				443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */,
 				443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */,
 				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
@@ -350,6 +365,7 @@
 				B9B85BB5234C6935008EF2A8 /* GeometryReaderSamplesView.swift in Sources */,
 				443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */,
 				B927C419234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift in Sources */,
+				B999B77F23501403005AF8CE /* CanlendarSelectionAnchorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
