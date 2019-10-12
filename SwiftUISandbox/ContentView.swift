@@ -35,6 +35,8 @@ struct ContentView: View {
                 }
                 Section(header: Text("Lab")){
                     NavigationLink(destination: SampleViewForDebugConsole(), label: { Text("コンソール用のWindow") })
+                    NavigationLink(destination: RestlictInputView(), label: { Text("テキスト入力L") })
+
                 }
 
             }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
