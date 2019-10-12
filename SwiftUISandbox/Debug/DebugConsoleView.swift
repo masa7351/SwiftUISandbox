@@ -16,9 +16,10 @@ struct DebugConsoleView: View {
         // https://stackoverflow.com/questions/56973959/swiftui-how-to-implement-a-custom-init-with-binding-variables
         self._consoleLogs = console
         UITableView.appearance().tableFooterView = UIView()
-        UITableView.appearance().backgroundColor = UIColor.init(hex: 0xdddddd)
+        UITableView.appearance().backgroundColor = UIColor(hex: 0xdddddd)
         // https://stackoverflow.com/questions/57128547/swiftui-list-color-background/57158348
-        UITableViewCell.appearance().backgroundColor = UIColor.init(hex: 0xdddddd)
+        UITableViewCell.appearance().backgroundColor = UIColor(hex: 0xdddddd)
+        
     }
     var body: some View {
         Group {
@@ -61,10 +62,10 @@ struct DebugConsoleView: View {
                         .fixedSize(horizontal: false, vertical: true)
                     
                 }
-                .background(Color.init(hex: 0xdddddd))
+                .background(Color(hex: 0xdddddd))
             }
         }
-        .background(Color.init(hex: 0xdddddd))
+        .background(Color(hex: 0xdddddd))
     }
     
     var minWindow: some View {
@@ -95,7 +96,10 @@ private extension UIColor {
             G: CGFloat((hex >> 08) & 0xff) / 255,
             B: CGFloat((hex >> 00) & 0xff) / 255
         )
-        self.init(red: components.R, green: components.G, blue: components.B, alpha: alpha)
+        self.init(red: components.R,
+                  green: components.G,
+                  blue: components.B,
+                  alpha: alpha)
     }
 }
 
