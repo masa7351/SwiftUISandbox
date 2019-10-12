@@ -20,6 +20,7 @@
 		443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916523452EE300E8FBF6 /* InitializeState2View.swift */; };
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
 		44B086B6235109CB00A3277C /* SampleViewForDebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */; };
+		44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B72351BDD100A3277C /* MiniMapView.swift */; };
 		44E7E7CE2350EB9300EE094E /* DebugConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E7E7CD2350EB9300EE094E /* DebugConsoleView.swift */; };
 		B927C419234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */; };
 		B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */; };
@@ -68,6 +69,7 @@
 		443E916523452EE300E8FBF6 /* InitializeState2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeState2View.swift; sourceTree = "<group>"; };
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
 		44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewForDebugConsole.swift; sourceTree = "<group>"; };
+		44B086B72351BDD100A3277C /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
 		44E7E7CD2350EB9300EE094E /* DebugConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugConsoleView.swift; sourceTree = "<group>"; };
 		B927C418234DDAAE00F3FD7E /* GeometryReaderPersentDivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderPersentDivisionView.swift; sourceTree = "<group>"; };
 		B927C41B234EBCF500F3FD7E /* BindingInteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingInteractiveView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				B999B77E23501403005AF8CE /* CanlendarSelectionAnchorView.swift */,
+				44B086B72351BDD100A3277C /* MiniMapView.swift */,
 			);
 			path = AnchorPreferences;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */,
 				B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */,
 				443E913323452CF800E8FBF6 /* AppDelegate.swift in Sources */,
 				443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */,

@@ -5,7 +5,6 @@
 //  Created by Masanao Imai on 2019/10/03.
 //  Copyright © 2019 Masanao Imai. All rights reserved.
 //
-
 import SwiftUI
 import Combine
 
@@ -23,6 +22,8 @@ struct ContentView: View {
                 }
                 Section(header: Text("Anchor")){
                     NavigationLink(destination: CanlendarSelectionAnchorView(), label: { Text("外枠がアニメーションしながら移動(SwiftUI Lab)") })
+                    NavigationLink(destination: MiniMapView(), label: { Text("MiniMap(SwiftUI Lab)") })
+
                 }
                 Section(header: Text("GeometryReader")){
                     NavigationLink(destination: GeometryReaderSamplesView(), label: { Text("GeometryReaderの動作確認サンプル集") })
