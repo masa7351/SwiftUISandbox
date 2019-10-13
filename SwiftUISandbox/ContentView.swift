@@ -39,7 +39,7 @@ struct ContentView: View {
 
                 }
 
-            }.navigationBarTitle(Text("メニュー"), displayMode: .inline)
+            }.navigationBarTitle(Text("Menu"), displayMode: .inline)
         }
     }
 }

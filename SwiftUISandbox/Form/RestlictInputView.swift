@@ -11,15 +11,65 @@ import Combine
 struct RestlictInputView: View {
     @ObservedObject private var restrictInput = RestrictInput(5)
     @State var showClearButton = true
+    @State var anyText: String = ""
+    @State var customText: String = ""
+    var isEnabled: Bool {
+        restrictInput.text.count > 0
+    }
     var body: some View {
         Form {
-            TextField("input text", text: $restrictInput.text, onEditingChanged: { editing in
-                self.showClearButton = editing
-            }, onCommit: {
-                self.showClearButton = false
-            })
-            .modifier( ClearButton(text: $restrictInput.text, visible: $showClearButton))
+            Section {
+                TextField("input text", text: $restrictInput.text, onEditingChanged: { editing in
+                    self.showClearButton = editing
+                }, onCommit: {
+                    self.showClearButton = false
+                })
+                    .modifier( ClearButton(text: $restrictInput.text, visible: $showClearButton))
+            }
+            Section {
+                CustomTextField(text: $customText, isFirstResponder: true)
+                .frame(width: 300, height: 50)
+                .background(Color.red)
+                
+            }
+            Section {
+                // highlight problem when button is disabled.
+//                Button(action: submit) { Text("Submit").disabled(!self.isEnabled) }
+                if self.isEnabled {
+                    Button(action: submit) { Text("Submit") }
+                } else {
+                    Text("Submit").foregroundColor(.gray)
+                }
+            }
+
         }
+        
+//        // shrink only a text filed
+//        Form {
+//            HStack {
+//                Spacer().frame(width: 30)
+//                TextField("input text", text: $restrictInput.text)
+//                Spacer().frame(width: 30)
+//            }
+//        }
+
+        // shrink a whole form area
+//        HStack {
+//            Spacer().frame(width: 30)
+//            Form {
+//                TextField("input text", text: $restrictInput.text)
+//            }
+//            Spacer().frame(width: 30)
+//        }
+
+        
+    }
+    
+    func submit() -> Void {
+        guard self.isEnabled else {
+            return
+        }
+        print("click submit button")
     }
 }
 
@@ -62,6 +112,47 @@ struct ClearButton: ViewModifier {
         }
     }
 }
+
+// https://stackoverflow.com/questions/56507839/how-to-make-textfield-become-first-responder/56508132#56508132
+private struct CustomTextField: UIViewRepresentable {
+
+    class Coordinator: NSObject, UITextFieldDelegate {
+
+        @Binding var text: String
+        var didBecomeFirstResponder = false
+
+        init(text: Binding<String>) {
+            _text = text
+        }
+
+        func textFieldDidChangeSelection(_ textField: UITextField) {
+            text = textField.text ?? ""
+        }
+
+    }
+
+    @Binding var text: String
+    var isFirstResponder: Bool = false
+
+    func makeUIView(context: UIViewRepresentableContext<CustomTextField>) -> UITextField {
+        let textField = UITextField(frame: .zero)
+        textField.delegate = context.coordinator
+        return textField
+    }
+
+    func makeCoordinator() -> CustomTextField.Coordinator {
+        return Coordinator(text: $text)
+    }
+
+    func updateUIView(_ uiView: UITextField, context: UIViewRepresentableContext<CustomTextField>) {
+        uiView.text = text
+        if isFirstResponder && !context.coordinator.didBecomeFirstResponder  {
+            uiView.becomeFirstResponder()
+            context.coordinator.didBecomeFirstResponder = true
+        }
+    }
+}
+
 // MARK: - Preview
 
 struct RestlictInputView_Previews: PreviewProvider {
