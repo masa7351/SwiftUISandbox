@@ -21,6 +21,7 @@
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
 		4473F2AC2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4473F2AB2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift */; };
 		4473F2AF2353317D007B8FC8 /* LabelledDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */; };
+		4473F2B123533640007B8FC8 /* HorizontalTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4473F2B023533640007B8FC8 /* HorizontalTabsView.swift */; };
 		44B086B6235109CB00A3277C /* SampleViewForDebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */; };
 		44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B72351BDD100A3277C /* MiniMapView.swift */; };
 		44B086BB23521CE300A3277C /* RestlictInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086BA23521CE300A3277C /* RestlictInputView.swift */; };
@@ -73,6 +74,7 @@
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
 		4473F2AB2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollWhenShownKeyboardView.swift; sourceTree = "<group>"; };
 		4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDividerView.swift; sourceTree = "<group>"; };
+		4473F2B023533640007B8FC8 /* HorizontalTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTabsView.swift; sourceTree = "<group>"; };
 		44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewForDebugConsole.swift; sourceTree = "<group>"; };
 		44B086B72351BDD100A3277C /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
 		44B086BA23521CE300A3277C /* RestlictInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestlictInputView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */,
+				4473F2B023533640007B8FC8 /* HorizontalTabsView.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4473F2B123533640007B8FC8 /* HorizontalTabsView.swift in Sources */,
 				4473F2AF2353317D007B8FC8 /* LabelledDividerView.swift in Sources */,
 				44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */,
 				44B086BB23521CE300A3277C /* RestlictInputView.swift in Sources */,
