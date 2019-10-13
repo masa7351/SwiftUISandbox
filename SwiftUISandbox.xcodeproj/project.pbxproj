@@ -19,6 +19,8 @@
 		443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916323452E1F00E8FBF6 /* InitializeStateView.swift */; };
 		443E916623452EE300E8FBF6 /* InitializeState2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E916523452EE300E8FBF6 /* InitializeState2View.swift */; };
 		443E9168234530ED00E8FBF6 /* NoneInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */; };
+		4473F2AC2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4473F2AB2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift */; };
+		4473F2AF2353317D007B8FC8 /* LabelledDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */; };
 		44B086B6235109CB00A3277C /* SampleViewForDebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */; };
 		44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086B72351BDD100A3277C /* MiniMapView.swift */; };
 		44B086BB23521CE300A3277C /* RestlictInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B086BA23521CE300A3277C /* RestlictInputView.swift */; };
@@ -69,6 +71,8 @@
 		443E916323452E1F00E8FBF6 /* InitializeStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeStateView.swift; sourceTree = "<group>"; };
 		443E916523452EE300E8FBF6 /* InitializeState2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeState2View.swift; sourceTree = "<group>"; };
 		443E9167234530ED00E8FBF6 /* NoneInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneInitializeState.swift; sourceTree = "<group>"; };
+		4473F2AB2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollWhenShownKeyboardView.swift; sourceTree = "<group>"; };
+		4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDividerView.swift; sourceTree = "<group>"; };
 		44B086B5235109CB00A3277C /* SampleViewForDebugConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewForDebugConsole.swift; sourceTree = "<group>"; };
 		44B086B72351BDD100A3277C /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
 		44B086BA23521CE300A3277C /* RestlictInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestlictInputView.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		443E913123452CF800E8FBF6 /* SwiftUISandbox */ = {
 			isa = PBXGroup;
 			children = (
+				4473F2AD23533165007B8FC8 /* Tips */,
 				44E7E7CC2350EAAF00EE094E /* Debug */,
 				B999B77D235013BC005AF8CE /* AnchorPreferences */,
 				443E913223452CF800E8FBF6 /* AppDelegate.swift */,
@@ -187,10 +192,19 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		4473F2AD23533165007B8FC8 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				4473F2AE2353317D007B8FC8 /* LabelledDividerView.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 		44B086B923521C9E00A3277C /* Form */ = {
 			isa = PBXGroup;
 			children = (
 				44B086BA23521CE300A3277C /* RestlictInputView.swift */,
+				4473F2AB2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -379,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4473F2AF2353317D007B8FC8 /* LabelledDividerView.swift in Sources */,
 				44B086B82351BDD100A3277C /* MiniMapView.swift in Sources */,
 				44B086BB23521CE300A3277C /* RestlictInputView.swift in Sources */,
 				B986FFDE234D8A970088377A /* ScrollViewRemoveSpace.swift in Sources */,
@@ -388,6 +403,7 @@
 				443E913523452CF800E8FBF6 /* SceneDelegate.swift in Sources */,
 				443E916423452E1F00E8FBF6 /* InitializeStateView.swift in Sources */,
 				44E7E7CE2350EB9300EE094E /* DebugConsoleView.swift in Sources */,
+				4473F2AC2352ED63007B8FC8 /* AutoScrollWhenShownKeyboardView.swift in Sources */,
 				B9B85BB3234C668F008EF2A8 /* StateAnotationView.swift in Sources */,
 				44047895234D4E430033F3AF /* GeometryReaderFirstView.swift in Sources */,
 				B927C41C234EBCF500F3FD7E /* BindingInteractiveView.swift in Sources */,

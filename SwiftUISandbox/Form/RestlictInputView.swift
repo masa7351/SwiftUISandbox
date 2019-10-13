@@ -30,7 +30,11 @@ struct RestlictInputView: View {
                 CustomTextField(text: $customText, isFirstResponder: true)
                 .frame(width: 300, height: 50)
                 .background(Color.red)
-                
+            }
+            
+            Section {
+                TextField("custom stype", text: $anyText)
+                .modifier(CustomStyle())
             }
             Section {
                 // highlight problem when button is disabled.
@@ -41,7 +45,7 @@ struct RestlictInputView: View {
                     Text("Submit").foregroundColor(.gray)
                 }
             }
-
+            
         }
         
 //        // shrink only a text filed
@@ -110,6 +114,17 @@ struct ClearButton: ViewModifier {
 //                    .opacity(visible ? 1 : 0)
 //            }
         }
+    }
+}
+
+// this is not good.
+// I guess that Apple prohibit UI custom.
+private struct CustomStyle: ViewModifier {
+    public func body(content: Content) -> some View {
+        return content
+            .padding()
+            .foregroundColor(.green)
+            .background(Color.yellow)
     }
 }
 
